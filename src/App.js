@@ -38,7 +38,7 @@ function handleToggle(){
 }
 
   return (
-    <div className={`item ${isOpen ? "item-open" : ""}`} onClick={handleToggle}>
+    <div className={`item ${isOpen ? "open" : ""}`} onClick={handleToggle}>
       <p className="number">{num <=9 ? `0${num}` : num}</p>
       <p className="title">{title}</p>
       <p className="icon">{isOpen ? "-" : "+"}</p>
